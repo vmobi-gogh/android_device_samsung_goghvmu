@@ -20,17 +20,17 @@
 # definition file).
 #
 
-# inherit from common D2
--include device/samsung/d2-common/BoardConfigCommon.mk
+# inherit from common gogh
+-include device/samsung/gogh-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/d2spr/BoardConfigVendor.mk
+-include vendor/samsung/goghvmu/BoardConfigVendor.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := d2spr,d2spi
+TARGET_OTA_ASSERT_DEVICE := goghspr,goghvmu,Axiom,Victory,SPH-L300
 
 # Kernel
-TARGET_KERNEL_CONFIG    := cyanogen_d2spr_defconfig
+TARGET_KERNEL_CONFIG    := gogh_defconfig
 
-TARGET_BOARD_INFO_FILE ?= device/samsung/d2spr/board-info.txt
+TARGET_BOARD_INFO_FILE ?= device/samsung/goghvmu/board-info.txt
 
