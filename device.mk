@@ -24,4 +24,4 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/goghvmu/overlay
 DEVICE_PACKAGE_OVERLAYS += device/samsung/gogh-common/overlay-cdma
 
 # Inherit from gogh-common
-$(call inherit-product, device/samsung/goghvmu-common/goghvmu-common.mk)
+$(call inherit-product, device/samsung/gogh-common/gogh-common.mk)
