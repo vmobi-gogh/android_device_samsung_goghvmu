@@ -24,11 +24,11 @@
 -include device/samsung/gogh-common/BoardConfigCommon.mk
 
 # inherit from the proprietary version
--include vendor/samsung/goghvmu/BoardConfigVendor.mk
+-include vendor/samsung/gogh/BoardConfigVendor.mk
 
 # Assert
 TARGET_OTA_ASSERT_DEVICE := goghspr,goghvmu,Axiom,Victory,SPH-L300
 
 # Kernel
-TARGET_KERNEL_CONFIG    := cyanogen_goghvmu_defconfig
+TARGET_KERNEL_CONFIG    := cyanogen_gogh_defconfig
 TARGET_KERNEL_SOURCE    := kernel/samsung/gogh

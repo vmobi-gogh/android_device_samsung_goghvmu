@@ -15,7 +15,7 @@
 #
 
 ## (2) Also get non-open-source specific aspects if available
-$(call inherit-product-if-exists, vendor/samsung/goghvmu/goghvmu-vendor.mk)
+$(call inherit-product-if-exists, vendor/samsung/gogh/gogh-vendor.mk)
 
 ## overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/goghvmu/overlay
@@ -26,4 +26,3 @@ DEVICE_PACKAGE_OVERLAYS += device/samsung/gogh-common/overlay-cdma
 # Inherit from gogh-common
 $(call inherit-product, device/samsung/gogh-common/gogh-common.mk)
 
-$(call inherit-product-if-exists, vendor/samsung/goghvmu/goghvmu-vendor.mk)
