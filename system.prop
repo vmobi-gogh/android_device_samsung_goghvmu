@@ -15,9 +15,24 @@ gsm.operator.numeric = 310120
 gsm.operator.iso-country = us
 ro.cdma.home.operator.numeric=310120
 ro.cdma.home.operator.alpha=Virgin Mobile
-ro.telephony.default_network=4
+ro.telephony.default_network=8
 keyguard.no_require_sim=true
 DEVICE_PROVISIONED=1
 telephony.lteOnCdmaDevice=1
 ro.config.svlte1x=true
 dalvik.vm.dexopt-data-only=1
+
+#Fix Internet
+net.dns1=8.8.8.8
+net.dns2=8.8.4.4
+net.rmnet0.dns1=8.8.8.8
+net.rmnet0.dns2=8.8.4.4
+net.rmnet1.dns1=8.8.8.8
+net.rmnet1.dns2=8.8.4.4
+net.rmnet2.dns1=8.8.8.8
+net.rmnet2.dns2=8.8.4.4
+net.gprs.dns1=8.8.8.8
+net.gprs.dns2=8.8.4.4
+net.ppp0.dns1=8.8.8.8
+net.ppp0.dns2=8.8.4.4
+mobiledata.interfaces=rmnet0,rmne
