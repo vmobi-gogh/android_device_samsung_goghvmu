@@ -1,2 +1,5 @@
 # Add device specific blobs here
 bin/gsiff_daemon
+lib/libacdbloader.so
+lib/libaudioalsa.so
+
