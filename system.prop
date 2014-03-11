@@ -8,12 +8,16 @@ rild.libargs=-d /dev/smd0
 # MAX PROP NAME is 31 chars --|
 ro.telephony.ril_class=SamsungCDMAQualcommRIL
 gsm.sim.operator.alpha=Virgin Mobile
-gsm.sim.operator.numeric=310120
+gsm.operator.numeric.real=310120
+gsm.sim.operator.numeric=311490
 gsm.sim.operator.iso-country=us
 gsm.operator.alpha=Sprint
-gsm.operator.numeric=310120
+gsm.operator.numeric=311490
 gsm.operator.iso-country=us
-ro.cdma.home.operator.numeric=310120
+#gsm.version.ril-impl=Qualcomm RIL 1.0
+ro.cdma.default_alpha=Samsung
+ro.cdma.default_numeric=000000
+ro.cdma.home.operator.numeric=311490
 ro.cdma.home.operator.alpha=Virgin Mobile
 ro.telephony.default_network=4
 keyguard.no_require_sim=true
@@ -22,17 +26,4 @@ telephony.lteOnCdmaDevice=1
 ro.config.svlte1x=true
 dalvik.vm.dexopt-data-only=1
 
-#Internet
-net.dns1=8.8.8.8
-net.dns2=8.8.4.4
-net.rmnet0.dns1=8.8.8.8
-net.rmnet0.dns2=8.8.4.4
-net.rmnet1.dns1=8.8.8.8
-net.rmnet1.dns2=8.8.4.4
-net.rmnet2.dns1=8.8.8.8
-net.rmnet2.dns2=8.8.4.4
-net.gprs.dns1=8.8.8.8
-net.gprs.dns2=8.8.4.4
-net.ppp0.dns1=8.8.8.8
-net.ppp0.dns2=8.8.4.4
-mobiledata.interfaces=rmnet0,rmne
+
