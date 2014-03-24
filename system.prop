@@ -24,6 +24,7 @@ keyguard.no_require_sim=true
 DEVICE_PROVISIONED=1
 telephony.lteOnCdmaDevice=1
 ro.config.svlte1x=true
-dalvik.vm.dexopt-data-only=1
 
 
+ro.sf.lcd_density=240
+ro.qualcomm.bt.hci_transport=smd

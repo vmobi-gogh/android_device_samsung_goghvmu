@@ -1,0 +1,14 @@
+[
+  {
+    "repository": "android_device_samsung_gogh-common",
+    "target_path": "device/samsung/gogh-common"
+  },
+  {
+    "repository": "android_kernel_samsung_gogh",
+    "target_path": "kernel/samsung/gogh"
+  },
+  {
+    "repository": "android_hardware_samsung",
+    "target_path": "hardware/samsung"
+  }
+]
