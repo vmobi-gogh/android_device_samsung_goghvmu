@@ -36,37 +36,11 @@ TARGET_KERNEL_CONFIG        := cyanogen_gogh_defconfig
 BOARD_MKBOOTIMG_ARGS        := --ramdisk_offset 0x01500000
 TARGET_KERNEL_SOURCE        := kernel/samsung/gogh
 
-# Bluetooth
-BOARD_HAVE_BLUETOOTH_QCOM := true
-BLUETOOTH_HCI_USE_MCT := true
-
-# Wifi
-BOARD_WLAN_DEVICE := qcwcn
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
-BOARD_HOSTAPD_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
-BOARD_HAS_QCOM_WLAN := true
-
-WIFI_DRIVER_MODULE_PATH     := "/system/lib/modules/prima_wlan.ko"
-WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/prima_wlan/parameters/fwpath"
-WIFI_DRIVER_MODULE_NAME     := "prima_wlan"
-
 #Audio
-BOARD_USES_SEPERATED_VOICE_SPEAKER := true
 BOARD_USES_FLUENCE_INCALL := false
 
 #camera hax
 COMMON_GLOBAL_CFLAGS += -DCONFIG_MSM8960_NO_CANCEL_AUTOFOCUS
-
-# undefined
-WIFI_DRIVER_MODULE_ARG      :=
-WIFI_DRIVER_MODULE_AP_ARG   :=
-WIFI_DRIVER_FW_PATH_STA     :=
-WIFI_DRIVER_FW_PATH_AP      :=
-WIFI_DRIVER_FW_PATH_P2P     :=
-BOARD_HAVE_SAMSUNG_WIFI :=
-BOARD_HAVE_BLUETOOTH_BCM :=
-BOARD_HAVE_AUDIENCE_A2220 :=
-TARGET_KERNEL_VARIANT_CONFIG :=
 
 ifeq ($(VARIENT_REQUIRE_3.0_KERNEL),true)
 ## 3.0 kernel defines
