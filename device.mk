@@ -16,17 +16,18 @@
 $(call inherit-product-if-exists, vendor/samsung/gogh-common/gogh-common-vendor.mk)
 $(call inherit-product-if-exists, vendor/samsung/goghvmu/goghvmu-vendor.mk)
 VARIENT_MODEL := goghvmu
+
 #VARIENT_REQUIRE_3.0_KERNEL := true
+
 ## overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/goghvmu/overlay
 
-
 ## common overlays
 DEVICE_PACKAGE_OVERLAYS += device/samsung/gogh-common/overlay-cdma
+
 # Boot animation
 TARGET_SCREEN_HEIGHT := 800
 TARGET_SCREEN_WIDTH := 480
-
 
 #Scripts
 PRODUCT_PACKAGES += \

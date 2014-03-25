@@ -26,7 +26,7 @@
 -include device/samsung/gogh-common/BoardConfigCommon.mk
 
 # Assert
-TARGET_OTA_ASSERT_DEVICE := goghvmu,goghspr
+TARGET_OTA_ASSERT_DEVICE := goghvmu,goghspr,SPH-L300
 
 # Insert contents of file near end of updater-script
 TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := ./build/tools/releasetools/ota_from_target_files -e ./device/samsung/goghvmu/installer_extra
